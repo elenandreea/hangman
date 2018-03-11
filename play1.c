@@ -34,16 +34,6 @@ int play(char* sir, char* ascuns, int nrlines, int nrch)
         	if(strchr(ascuns,c) || strchr(greseli,c))
         		c=ERR;
         }
-        
-        // if(c == 'Q')
-        // {
-        // 	//boring = 1;
-        // 	clear();
-        // 	refresh();
-        // 	//game_return = MainMenu();
-        	
-        // 	break;	
-        // }
 
 		ok = 0;
 		for(i = 0; i < strlen(sir); i++)
