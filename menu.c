@@ -14,7 +14,6 @@ int MainMenu()
 	int c;
 	MENU *menu;//obiectul meniu
 	int n_options,i;//nr de elem
-	//ITEM *cur_item;
 
 	WINDOW *menu_win;
 	menu_win = subwin(stdscr,5,16,4,COLS/2-6);
@@ -25,7 +24,6 @@ int MainMenu()
 	cbreak();
 	noecho();
 	keypad(stdscr, TRUE);
-	//curs_set(0); //ascundere cursor
 
 	//perechi culori pentru meniu
 	init_pair(1, COLOR_RED,COLOR_BLACK);
@@ -56,7 +54,6 @@ int MainMenu()
 	/* culorile pentru elementele de meniu */
 	set_menu_fore(menu, COLOR_PAIR(1) | A_REVERSE);
 	set_menu_back(menu, COLOR_PAIR(2));
-	//set_menu_grey(meniu_principal, COLOR_PAIR(3));//pentru elemente neselectabile
 
 	mvprintw(LINES - 5, 1, "---> THE AMAZING HANGMAN <---");
 	mvprintw(LINES - 3, 1, "Press <ENTER> to select");
