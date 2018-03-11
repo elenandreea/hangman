@@ -1,16 +1,8 @@
-/*
-#include <stdio.h>
-#include <string.h>
-#include <ctype.h>
-#include <stdlib.h>
-*/
+
 
 void hidden(char *sir,char *ascuns)
-//int main()
 {
-	//char sir[]="x ya z axc\0";
 	char aux[200];
-	//char ascuns[200] ="";
 	int i,k;
 	// Print the first and the last letter of each word (depending on the length)
 	char *p = strtok(sir," ");
@@ -40,7 +32,6 @@ void hidden(char *sir,char *ascuns)
 	}
 	
 	ascuns[strlen(ascuns)-1] = '\0';
-	//printf("%s\n",ascuns );
 
 	// Print duplicate letters
 	for (i = 0; i < strlen(ascuns); i++)
@@ -57,8 +48,5 @@ void hidden(char *sir,char *ascuns)
 
 		}
 	}
-//	printf("%s\n",ascuns );
-	//return 0;
-	//mvprintw(LINES - 3, 1, "Press <ENTER> to select and reveal top ten scores");
 }
 
