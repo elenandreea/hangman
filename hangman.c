@@ -25,7 +25,6 @@
 #include "randomorg.c"
 #include "hidden1.c"
 #include "play1.c"
-//#include "try2.c"
 #include "try.c"
 
 
@@ -61,12 +60,7 @@ while ( 1 )
 
 		play(matrix[random_nr], ascuns,number_of_lines,number_of_valid_characters);
 	}
-	// if(menu_return == 2 )
-	// {
-	// 	clear();
-	// 	refresh();
-	// 	play(matrix[random_nr], ascuns,number_of_lines,number_of_valid_characters);
-	// }
+	
 }
 
 	endwin();
