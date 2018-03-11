@@ -3,9 +3,6 @@
 #include <sys/time.h>
 #include <sys/types.h>
 #include <unistd.h>
-//#include <time.h>
-//#include "try2.c"
-//#include <ncurses.h>
 #include <sys/select.h>
 #include <time.h>
 #include <stdlib.h>
@@ -29,9 +26,6 @@ int randomch(int max)
 
 int timechar(char *sir, char *ascuns)
 {
-    //char sir[]="xyz";
-   // char ascuns[]="ab";
-
     fd_set rfds;
     struct timeval tv;
     int retval;
@@ -51,15 +45,13 @@ int timechar(char *sir, char *ascuns)
         case 1:
             c=getch();
             return c;
-       // printf("%s\n","HATE" );
             break;
         case 0:
             ajutor=0;
             while(ajutor==0)
-            {   //printf("%s\n", "alaal");
+            {   
                 char i;
                 i=randomch(95);
-                //printf("%c\n", i);
                 int j,aux1=1,aux2=1;
                 for(j=0;j<strlen(sir);j++)
                     if(sir[j]==i)
@@ -78,12 +70,3 @@ int timechar(char *sir, char *ascuns)
     return 0;
         
 }
-
-/*int main()
-{
-    char sir[]="xyz";
-   char ascuns[]="ab";
-   int i =timechar(sir,ascuns);
-   printf("%c\n",i );
-   return 0;
-}*/
